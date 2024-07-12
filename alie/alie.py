@@ -148,9 +148,9 @@ def there_exists(terms):
             return True
 
 mydb =  mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="GALGALLO10",
+    host="",
+    user="",
+    password="",
     db="aliebrain")
 cursor = mydb.cursor()
 
@@ -211,7 +211,7 @@ def respond(voice_data):
         def ikiwa(terms):
             for term in terms:
                 if term in how:
-                    return True
+                    return Truew
         if ikiwa(['good','fine','great','okay','ok']):
             aspeak('nice to hear ')
         else:
