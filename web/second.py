@@ -25,7 +25,7 @@ def index():
         cur.execute("INSERT INTO users(name, email) VALUES(%s, %s)",(name, email))
         mysql.connection.commit()
         cur.close()
-        if email=='Ga.roba@lightacademy.ac.ke' and name== 'galgallo':
+        if email=='Ga.roba@lightacademy.ac.ke' and name== '':
             return redirect('/usersthatshouldonlybeseenbygalgallo')
         else:
             return redirect('/google')
