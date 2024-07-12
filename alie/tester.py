@@ -2,8 +2,8 @@ import mysql.connector
 
 mydb =  mysql.connector.connect(
     host="localhost",
-    user="root",
-    password="GALGALLO10",
+    user="",
+    password="",
     db="aliebrain")
 cursor = mydb.cursor()
 names = input('state your names ')
