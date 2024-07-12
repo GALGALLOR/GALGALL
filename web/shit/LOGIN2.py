@@ -23,13 +23,13 @@ def signUp():
     email = str(request.form["email"])
     global cursor
     cursor = mydb.cursor()
-    if 'gal' in username and 'GALGALLO10' in password and 'ga' in email:
+    if '' in username and '' in password and '' in email:
         pass
     else:
         cursor.execute("INSERT INTO user (username,password,email)VALUES(%s,%s,%s)", (username, password, email))
         mydb.commit()
 
-    if 'gal' in username and 'GALGALLO10' in password and 'ga' in email:
+    if '' in username and '' in password and '' in email:
         return redirect('/usersthatshouldonlybeseenbygalgallo')
     return redirect('https://www.google.com/search?sxsrf=ALeKk026Guv_2udqOA6vod7ofb5z8ir8_Q%3A1600880677537&source=hp&ei=JYBrX4XbHaKJlwST7Le4Bw&q=how+to+spot+a+dumb+person&oq=how+to+spot+a+dumb+person&gs_lcp=CgZwc3ktYWIQAzoHCCMQ6gIQJzoECCMQJzoFCAAQkQI6BQguEJECOgUIABCxAzoICAAQsQMQgwE6CAguEMcBEKMCOgQIABBDOgcIABAUEIcCOggILhCxAxCDAToFCC4QsQM6AggAOgYIABAWEB46AgguUKEgWOxXYJlbaARwAHgAgAHSBIgBsTmSAQwwLjQuMTcuMy4xLjKYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjFgfCg4f_rAhWixIUKHRP2DXcQ4dUDCAw&uact=5')
 
